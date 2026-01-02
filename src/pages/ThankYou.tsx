@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { Layout } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone } from "lucide-react";
 
 const ThankYou = () => {
   return (
-    <Layout>
+    <>
       <section className="min-h-[80vh] flex items-center justify-center section-padding">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
@@ -51,7 +50,7 @@ const ThankYou = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

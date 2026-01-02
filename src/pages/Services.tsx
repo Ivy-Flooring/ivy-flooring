@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { Layout } from "@/components/layout";
 import { PageHero, ServiceCard, CTASection } from "@/components/sections";
-import { TreeDeciduous, Layers, Volume2, Footprints, ArrowRight } from "lucide-react";
+import { TreeDeciduous, Layers, Volume2, Footprints } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import galleryLiving from "@/assets/gallery-living.jpg";
@@ -50,7 +49,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Layout>
+    <>
       <PageHero
         title="Our Flooring Services"
         description="We specialize exclusively in hardwood and wood-like flooring. This focused expertise means better quality, faster service, and floors that stand the test of time."
@@ -94,7 +93,7 @@ const Services = () => {
 
       {/* CTA */}
       <CTASection />
-    </Layout>
+    </>
   );
 };
 

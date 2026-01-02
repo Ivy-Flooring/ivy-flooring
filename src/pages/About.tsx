@@ -1,4 +1,3 @@
-import { Layout } from "@/components/layout";
 import { PageHero, CTASection, ProcessSection } from "@/components/sections";
 import { CheckCircle, Heart, Target, Users } from "lucide-react";
 
@@ -29,7 +28,7 @@ const values = [
 
 const About = () => {
   return (
-    <Layout>
+    <>
       <PageHero
         title="About Ivy Flooring"
         description="Middle Tennessee's trusted hardwood and wood-like flooring specialists. Built on relationships, referrals, and a commitment to doing things right."
@@ -138,7 +137,7 @@ const About = () => {
         title="Ready to Work Together?"
         description="Let's discuss your flooring project. No pressure, just honest answers and professional guidance."
       />
-    </Layout>
+    </>
   );
 };
 
