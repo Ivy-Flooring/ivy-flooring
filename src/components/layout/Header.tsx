@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import ivyLogo from "@/assets/ivy-flooring-logo.avif";
 
 const services = [
   { name: "Hardwood Flooring", href: "/services/hardwood-flooring" },
@@ -49,19 +50,12 @@ export function Header() {
         <nav className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex flex-col">
-                <span className={`font-heading text-2xl font-bold transition-colors duration-300 ${
-                  scrolled ? "text-primary" : "text-primary-foreground"
-                }`}>
-                  Ivy Flooring
-                </span>
-                <span className={`text-xs font-body tracking-wider uppercase transition-colors duration-300 ${
-                  scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-                }`}>
-                  Hardwood Specialists
-                </span>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img 
+                src={ivyLogo} 
+                alt="Ivy Flooring - Hardwood Specialists" 
+                className="h-14 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
