@@ -1,4 +1,3 @@
-import { Layout } from "@/components/layout";
 import { PageHero } from "@/components/sections";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -40,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <>
       <PageHero
         title="Request a Quote"
         description="Get a precise, no-obligation estimate for your flooring project. We typically respond within 24 hours."
@@ -200,7 +199,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

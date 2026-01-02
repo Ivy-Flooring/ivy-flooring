@@ -1,4 +1,3 @@
-import { Layout } from "@/components/layout";
 import { PageHero, ReviewCard, CTASection } from "@/components/sections";
 import { Star } from "lucide-react";
 
@@ -70,7 +69,7 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <Layout>
+    <>
       <PageHero
         title="Customer Reviews"
         description="Don't just take our word for it. Read what homeowners across Middle Tennessee have to say about working with Ivy Flooring."
@@ -117,7 +116,7 @@ const Reviews = () => {
         title="Join Our Satisfied Customers"
         description="Experience the Ivy Flooring difference for yourself. Request your free quote today."
       />
-    </Layout>
+    </>
   );
 };
 

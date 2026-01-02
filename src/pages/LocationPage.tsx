@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-import { Layout } from "@/components/layout";
 import { PageHero, CTASection, TrustBar } from "@/components/sections";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
@@ -24,7 +23,7 @@ const LocationPage = () => {
   const location = locationData[slug || ""] || { name: "Middle Tennessee", description: "Premium flooring services throughout the region." };
 
   return (
-    <Layout>
+    <>
       <PageHero
         title={`Flooring Services in ${location.name}, TN`}
         description={location.description}
@@ -59,7 +58,7 @@ const LocationPage = () => {
       </section>
 
       <CTASection title={`Ready to Transform Your ${location.name} Home?`} />
-    </Layout>
+    </>
   );
 };
 

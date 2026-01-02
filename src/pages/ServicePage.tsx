@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { Layout } from "@/components/layout";
 import { PageHero, FAQSection, CTASection, ProcessSection } from "@/components/sections";
 import { TreeDeciduous, Layers, Volume2, Footprints, CheckCircle } from "lucide-react";
 
@@ -114,7 +113,7 @@ const ServicePage = () => {
   const service = serviceData[slug || ""] || serviceData["hardwood-flooring"];
 
   return (
-    <Layout>
+    <>
       <PageHero
         title={service.title}
         description={service.description}
@@ -147,7 +146,7 @@ const ServicePage = () => {
       <ProcessSection />
       <FAQSection faqs={service.faqs} subtitle={`Common questions about ${service.title.toLowerCase()}`} />
       <CTASection />
-    </Layout>
+    </>
   );
 };
 

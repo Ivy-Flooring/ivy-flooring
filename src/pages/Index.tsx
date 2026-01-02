@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Layout } from "@/components/layout";
 import { TrustBar, ProcessSection, ServiceCard, ReviewCard, GalleryImage, CTASection } from "@/components/sections";
 import { Phone, TreeDeciduous, Layers, Volume2, Footprints, ArrowRight, CheckCircle } from "lucide-react";
 
@@ -95,7 +94,7 @@ const whyIvyPoints = [
 
 const Index = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
@@ -289,7 +288,7 @@ const Index = () => {
 
       {/* Final CTA */}
       <CTASection />
-    </Layout>
+    </>
   );
 };
 

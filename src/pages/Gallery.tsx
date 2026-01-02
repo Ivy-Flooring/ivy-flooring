@@ -1,4 +1,3 @@
-import { Layout } from "@/components/layout";
 import { PageHero, GalleryImage, CTASection } from "@/components/sections";
 import { useState } from "react";
 
@@ -32,7 +31,7 @@ const Gallery = () => {
     : galleryImages.filter(img => img.category === activeCategory);
 
   return (
-    <Layout>
+    <>
       <PageHero
         title="Our Work"
         description="Browse our portfolio of completed flooring projects across Middle Tennessee. Every project showcases our commitment to quality and craftsmanship."
@@ -71,7 +70,7 @@ const Gallery = () => {
         title="Love What You See?"
         description="Let's create something beautiful for your home. Request a free quote today."
       />
-    </Layout>
+    </>
   );
 };
 

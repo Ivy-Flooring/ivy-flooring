@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Layout } from "@/components/layout";
 import { PageHero, CTASection } from "@/components/sections";
 import { MapPin, ArrowRight } from "lucide-react";
 
@@ -33,7 +32,7 @@ const serviceAreas = [
 
 const ServiceAreas = () => {
   return (
-    <Layout>
+    <>
       <PageHero
         title="Service Areas"
         description="Ivy Flooring proudly serves homeowners throughout Middle Tennessee. Find flooring services near you."
@@ -95,7 +94,7 @@ const ServiceAreas = () => {
       </section>
 
       <CTASection />
-    </Layout>
+    </>
   );
 };
 
