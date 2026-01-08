@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { TrustBar, ProcessSection, ServiceCard, ReviewCard, GalleryImage, CTASection } from "@/components/sections";
 import { Phone, TreeDeciduous, Layers, Volume2, Footprints, ArrowRight, CheckCircle } from "lucide-react";
@@ -93,14 +94,28 @@ const whyIvyPoints = [
 ];
 
 const Index = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center -mt-20">
-        {/* Background Image */}
+      <section className="relative min-h-screen flex items-center -mt-20 overflow-hidden">
+        {/* Background Image with Parallax */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
+          style={{ 
+            backgroundImage: `url(${heroImage})`,
+            transform: `translateY(${scrollY * 0.3}px) scale(1.1)`,
+          }}
         />
         <div className="absolute inset-0 hero-overlay" />
 
