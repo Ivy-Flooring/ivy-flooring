@@ -111,10 +111,11 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center -mt-20 overflow-hidden">
         {/* Background Image with Parallax */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
+          className="absolute -top-20 left-0 right-0 bottom-0 bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: `url(${heroImage})`,
-            transform: `translateY(${scrollY * 0.3}px) scale(1.1)`,
+            transform: `translateY(${scrollY * 0.3}px) scale(1.15)`,
+            transformOrigin: 'center top',
           }}
         />
         <div className="absolute inset-0 hero-overlay" />
