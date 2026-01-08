@@ -50,11 +50,11 @@ export function Header() {
         <nav className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center group">
               <img 
                 src={ivyLogo} 
                 alt="Ivy Flooring - Hardwood Specialists" 
-                className="h-14 w-auto"
+                className="h-20 w-auto drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
 
