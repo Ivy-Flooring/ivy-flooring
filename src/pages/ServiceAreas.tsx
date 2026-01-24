@@ -28,6 +28,31 @@ const serviceAreas = [
     slug: "murfreesboro-tn",
     description: "Expert hardwood and wood-like flooring throughout Murfreesboro.",
   },
+  {
+    name: "Hendersonville",
+    slug: "hendersonville-tn",
+    description: "Premium hardwood flooring services for Hendersonville's lakeside community.",
+  },
+  {
+    name: "Lebanon",
+    slug: "lebanon-tn",
+    description: "Quality flooring installations for Lebanon's growing residential areas.",
+  },
+  {
+    name: "Gallatin",
+    slug: "gallatin-tn",
+    description: "Expert flooring solutions for Gallatin homeowners and new developments.",
+  },
+  {
+    name: "Springfield",
+    slug: "springfield-tn",
+    description: "Professional hardwood flooring services for Springfield and Robertson County.",
+  },
+  {
+    name: "Kingston Springs",
+    slug: "kingston-springs-tn",
+    description: "Quality flooring installations for Kingston Springs' charming community.",
+  },
 ];
 
 const ServiceAreas = () => {

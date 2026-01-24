@@ -8,6 +8,11 @@ const locationData: Record<string, { name: string; description: string }> = {
   "brentwood-tn": { name: "Brentwood", description: "Elegant flooring solutions for Brentwood's upscale homes and discerning homeowners." },
   "mount-juliet-tn": { name: "Mount Juliet", description: "Professional flooring services for Mount Juliet's growing residential community." },
   "murfreesboro-tn": { name: "Murfreesboro", description: "Expert hardwood specialists serving Murfreesboro families and homeowners." },
+  "hendersonville-tn": { name: "Hendersonville", description: "Premium hardwood flooring for Hendersonville's beautiful lakeside homes and neighborhoods." },
+  "lebanon-tn": { name: "Lebanon", description: "Quality flooring installations for Lebanon's growing community and new home developments." },
+  "gallatin-tn": { name: "Gallatin", description: "Expert flooring solutions for Gallatin homeowners throughout Sumner County." },
+  "springfield-tn": { name: "Springfield", description: "Professional hardwood flooring services for Springfield and Robertson County residents." },
+  "kingston-springs-tn": { name: "Kingston Springs", description: "Quality flooring installations for Kingston Springs' scenic and charming community." },
 };
 
 const services = [
