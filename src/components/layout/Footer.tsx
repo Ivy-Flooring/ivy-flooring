@@ -47,9 +47,9 @@ export function Footer() {
               Precision estimates, professional installation, and accountability through project completion.
             </p>
             <div className="space-y-2 text-sm">
-              <a href="tel:+16155551234" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
+              <a href="tel:+16157756949" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4" />
-                (615) 555-1234
+                (615) 775-6949
               </a>
               <a href="mailto:info@ivyflooring.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4" />

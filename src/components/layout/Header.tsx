@@ -189,7 +189,7 @@ export function Header() {
       {/* Mobile Sticky CTAs */}
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-card border-t border-border p-3 flex gap-3">
         <Button variant="ctaSecondary" size="lg" className="flex-1" asChild>
-          <a href="tel:+16155551234" className="flex items-center justify-center gap-2">
+          <a href="tel:+16157756949" className="flex items-center justify-center gap-2">
             <Phone className="w-4 h-4" />
             Call Now
           </a>
