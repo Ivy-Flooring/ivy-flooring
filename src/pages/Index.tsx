@@ -53,25 +53,16 @@ const services = [
 
 const reviews = [
   {
-    name: "Sarah M.",
+    name: "Justin Born",
     location: "Nashville, TN",
     rating: 5,
-    text: "Ivy Flooring transformed our entire first floor. The attention to detail was incredible, and the team was so respectful of our home. Highly recommend!",
-    date: "December 2025",
+    text: "Ivy Flooring for absolutely crushing it and bringing these 60-year-old hardwoods back to life!",
   },
   {
-    name: "Michael & Lisa T.",
-    location: "Franklin, TN",
+    name: "Billy Richards",
+    location: "Portland, TN",
     rating: 5,
-    text: "From the first estimate to the final walkthrough, the process was seamless. Our new hardwood floors are absolutely stunning.",
-    date: "November 2025",
-  },
-  {
-    name: "David R.",
-    location: "Brentwood, TN",
-    rating: 5,
-    text: "Professional, punctual, and the quality of work exceeded our expectations. The team made sure everything was perfect before they left.",
-    date: "October 2025",
+    text: "Ivy Flooring added the perfect finishing touch to a breathtaking natural white oak flooring, revealing a brighter, more refined look that unlocks the space's full potential of beauty.",
   },
 ];
 
@@ -254,7 +245,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {reviews.map((review, index) => (
               <ReviewCard key={index} {...review} />
             ))}
