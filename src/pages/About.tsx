@@ -1,7 +1,7 @@
 import { PageHero, CTASection, ProcessSection } from "@/components/sections";
 import { CheckCircle, Heart, Target, Users } from "lucide-react";
 
-import craftsmanImage from "@/assets/craftsman-installing.jpg";
+import ivyFamilyImage from "@/assets/ivy-family.jpg";
 
 const values = [
   {
@@ -64,8 +64,8 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src={craftsmanImage}
-                alt="Ivy Flooring team at work"
+                src={ivyFamilyImage}
+                alt="Ivy Flooring owner with daughter Ivy"
                 className="rounded-lg shadow-xl"
               />
             </div>
