@@ -41,7 +41,7 @@ const ThankYou = () => {
                 <Link to="/">Return Home</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="tel:+16155551234" className="flex items-center gap-2">
+                <a href="tel:+16157756949" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   Call Us Now
                 </a>

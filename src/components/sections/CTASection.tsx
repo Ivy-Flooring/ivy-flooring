@@ -25,9 +25,9 @@ export function CTASection({
             </Button>
             {showPhone && (
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+16155551234" className="flex items-center gap-2">
+                <a href="tel:+16157756949" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (615) 555-1234
+                  (615) 775-6949
                 </a>
               </Button>
             )}
