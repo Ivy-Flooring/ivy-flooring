@@ -43,7 +43,7 @@ export function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-primary/80 backdrop-blur-md shadow-lg"
+            ? "bg-ivy-gold/95 backdrop-blur-md shadow-gold"
             : "bg-transparent"
         }`}
       >
@@ -64,7 +64,7 @@ export function Header() {
               <div className="relative group">
                 <button
                   className={`flex items-center gap-1 font-medium transition-colors duration-300 ${
-                    scrolled ? "text-foreground hover:text-primary" : "text-primary-foreground hover:text-accent"
+                    scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
                   }`}
                   onClick={() => setServicesOpen(!servicesOpen)}
                   onMouseEnter={() => setServicesOpen(true)}
@@ -105,8 +105,8 @@ export function Header() {
                   key={link.href}
                   to={link.href}
                   className={`font-medium transition-colors duration-300 ${
-                    scrolled ? "text-foreground hover:text-primary" : "text-primary-foreground hover:text-accent"
-                  } ${location.pathname === link.href ? (scrolled ? "text-primary" : "text-accent") : ""}`}
+                    scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
+                  } ${location.pathname === link.href ? (scrolled ? "text-ivy-green-dark font-semibold" : "text-accent") : ""}`}
                 >
                   {link.name}
                 </Link>
@@ -121,7 +121,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               className={`lg:hidden p-2 transition-colors ${
-                scrolled ? "text-foreground" : "text-primary-foreground"
+                scrolled ? "text-ivy-charcoal" : "text-primary-foreground"
               }`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
