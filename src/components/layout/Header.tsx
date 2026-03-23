@@ -1,4 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+"use client";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -17,13 +20,14 @@ const navLinks = [
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/reviews" },
   { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const location = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,19 +45,18 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-ivy-gold/95 backdrop-blur-md shadow-gold"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? "bg-ivy-gold/95 backdrop-blur-md shadow-gold"
+          : "bg-transparent"
+          }`}
       >
         <nav className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
-              <img 
-                src={ivyLogo} 
-                alt="Ivy Flooring - Hardwood Specialists" 
+            <Link href="/" className="flex items-center group">
+              <img
+                src={ivyLogo.src}
+                alt="Ivy Flooring - Hardwood Specialists"
                 className="h-20 w-auto drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
@@ -63,9 +66,8 @@ export function Header() {
               {/* Services Dropdown */}
               <div className="relative group">
                 <button
-                  className={`flex items-center gap-1 font-medium transition-colors duration-300 ${
-                    scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
-                  }`}
+                  className={`flex items-center gap-1 font-medium transition-colors duration-300 ${scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
+                    }`}
                   onClick={() => setServicesOpen(!servicesOpen)}
                   onMouseEnter={() => setServicesOpen(true)}
                 >
@@ -73,14 +75,13 @@ export function Header() {
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 <div
-                  className={`absolute top-full left-0 pt-2 transition-all duration-200 ${
-                    servicesOpen ? "opacity-100 visible" : "opacity-0 invisible"
-                  }`}
+                  className={`absolute top-full left-0 pt-2 transition-all duration-200 ${servicesOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                    }`}
                   onMouseLeave={() => setServicesOpen(false)}
                 >
                   <div className="bg-card rounded-lg shadow-xl border border-border py-2 min-w-[240px]">
                     <Link
-                      to="/services"
+                      href="/services"
                       className="block px-4 py-2 text-sm font-semibold text-foreground hover:bg-secondary transition-colors"
                     >
                       All Services
@@ -89,7 +90,7 @@ export function Header() {
                     {services.map((service) => (
                       <Link
                         key={service.href}
-                        to={service.href}
+                        href={service.href}
                         className="block px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary transition-colors"
                       >
                         {service.name}
@@ -103,10 +104,9 @@ export function Header() {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  to={link.href}
-                  className={`font-medium transition-colors duration-300 ${
-                    scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
-                  } ${location.pathname === link.href ? (scrolled ? "text-ivy-green-dark font-semibold" : "text-accent") : ""}`}
+                  href={link.href}
+                  className={`font-medium transition-colors duration-300 ${scrolled ? "text-ivy-charcoal hover:text-ivy-green-dark" : "text-primary-foreground hover:text-accent"
+                    } ${location === link.href ? (scrolled ? "text-ivy-green-dark font-semibold" : "text-accent") : ""}`}
                 >
                   {link.name}
                 </Link>
@@ -114,15 +114,14 @@ export function Header() {
 
               {/* CTA Button */}
               <Button variant="cta" size="lg" asChild>
-                <Link to="/contact">Request a Quote</Link>
+                <Link href="/contact">Request a Quote</Link>
               </Button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className={`lg:hidden p-2 transition-colors ${
-                scrolled ? "text-ivy-charcoal" : "text-primary-foreground"
-              }`}
+              className={`lg:hidden p-2 transition-colors ${scrolled ? "text-ivy-charcoal" : "text-primary-foreground"
+                }`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -133,9 +132,8 @@ export function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden bg-card border-t border-border transition-all duration-300 overflow-hidden ${
-            mobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`lg:hidden bg-card border-t border-border transition-all duration-300 overflow-hidden ${mobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <div className="container-custom py-4 space-y-4">
             {/* Services */}
@@ -149,13 +147,13 @@ export function Header() {
               </button>
               {servicesOpen && (
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link to="/services" className="block py-1 text-sm font-semibold text-primary">
+                  <Link href="/services" className="block py-1 text-sm font-semibold text-primary">
                     All Services
                   </Link>
                   {services.map((service) => (
                     <Link
                       key={service.href}
-                      to={service.href}
+                      href={service.href}
                       className="block py-1 text-sm text-muted-foreground hover:text-primary"
                     >
                       {service.name}
@@ -169,7 +167,7 @@ export function Header() {
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                to={link.href}
+                href={link.href}
                 className="block py-2 font-medium text-foreground hover:text-primary"
               >
                 {link.name}
@@ -179,7 +177,7 @@ export function Header() {
             {/* CTA */}
             <div className="pt-4 space-y-3">
               <Button variant="cta" size="lg" className="w-full" asChild>
-                <Link to="/contact">Request a Quote</Link>
+                <Link href="/contact">Request a Quote</Link>
               </Button>
             </div>
           </div>
@@ -195,7 +193,7 @@ export function Header() {
           </a>
         </Button>
         <Button variant="cta" size="lg" className="flex-1" asChild>
-          <Link to="/contact">Get a Quote</Link>
+          <Link href="/contact">Get a Quote</Link>
         </Button>
       </div>
     </>

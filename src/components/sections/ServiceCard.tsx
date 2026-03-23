@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, LucideIcon } from "lucide-react";
 
 interface ServiceCardProps {
@@ -6,13 +6,13 @@ interface ServiceCardProps {
   description: string;
   href: string;
   icon: LucideIcon;
-  image?: string;
+  image?: string | any; // Changed from 'string' to 'string | any'
 }
 
 export function ServiceCard({ title, description, href, icon: Icon, image }: ServiceCardProps) {
   return (
     <Link
-      to={href}
+      href={href}
       className="group block bg-card rounded-lg overflow-hidden shadow-md card-hover border border-border"
     >
       {image && (

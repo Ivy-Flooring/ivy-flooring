@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const services = [
@@ -43,7 +43,7 @@ export function Footer() {
               </p>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Middle Tennessee's trusted hardwood and wood-like flooring specialist. 
+              Middle Tennessee's trusted hardwood and wood-like flooring specialist.
               Precision estimates, professional installation, and accountability through project completion.
             </p>
             <div className="space-y-2 text-sm">
@@ -71,7 +71,7 @@ export function Footer() {
               {services.map((service) => (
                 <li key={service.href}>
                   <Link
-                    to={service.href}
+                    href={service.href}
                     className="text-sm text-primary-foreground/80 hover:text-accent transition-colors"
                   >
                     {service.name}
@@ -90,7 +90,7 @@ export function Footer() {
               {serviceAreas.map((area) => (
                 <li key={area.href}>
                   <Link
-                    to={area.href}
+                    href={area.href}
                     className="text-sm text-primary-foreground/80 hover:text-accent transition-colors"
                   >
                     {area.name}, TN
@@ -99,7 +99,7 @@ export function Footer() {
               ))}
               <li>
                 <Link
-                  to="/service-areas"
+                  href="/service-areas"
                   className="text-sm text-accent hover:text-accent/80 transition-colors font-medium"
                 >
                   View All Areas →
@@ -117,7 +117,7 @@ export function Footer() {
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     className="text-sm text-primary-foreground/80 hover:text-accent transition-colors"
                   >
                     {link.name}

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 
@@ -21,7 +21,7 @@ export function CTASection({
           <p className="text-primary-foreground/80 text-lg mb-8">{description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="xl" asChild>
-              <Link to="/contact">Request a Free Quote</Link>
+              <Link href="/contact">Request a Free Quote</Link>
             </Button>
             {showPhone && (
               <Button variant="heroOutline" size="xl" asChild>

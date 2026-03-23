@@ -1,8 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { X } from "lucide-react";
 
 interface GalleryImageProps {
-  src: string;
+  src: string | any;
   alt: string;
   category?: string;
 }
