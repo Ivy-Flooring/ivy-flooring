@@ -9,6 +9,15 @@ import bedroomEngineered from "@/assets/bedroom-engineered-flooring-nashville-tn
 import engineeredBrentwood from "@/assets/Engineered_Wood_Flooring_Brentwood_TN.png";
 import hardwoodFranklin from "@/assets/Hardwood_Flooring_Franklin_TN.jpg";
 import hardwoodInstallation from "@/assets/Hardwood_Flooring_Installation_Nashville.jpg";
+import hardwoodBedroomHendersonville from "@/assets/Hardwood_Flooring_Bedroom_Hendersonville.jpg";
+import hardwoodBedroomMtJuliet from "@/assets/Hardwood_Flooring_Bedroom_Mt_Juliet.jpg";
+import hardwoodBedroomSpringfield from "@/assets/Hardwood_Flooring_Bedroom_Springfield.jpg";
+import hardwoodKitchenBrentwood from "@/assets/Hardwood_Flooring_Kitchen_Installation_Brentwood.JPG";
+import hardwoodLivingRoomBrentwood from "@/assets/Hardwood_Flooring_Living_Room_Installation_Brentwood.JPG";
+import hardwoodLivingRoomMtJuliet from "@/assets/Hardwood_Flooring_Living_Room_Mt_Juliet.jpg";
+import hardwoodNashvilleRecent1 from "@/assets/Hardwood_Flooring_Nashville_01_Sept_01_2026.JPG";
+import hardwoodNashvilleRecent2 from "@/assets/Hardwood_Flooring_Nashville_07_Sept_01_2026.JPG";
+import hardwoodNashvilleRecent3 from "@/assets/Hardwood_Flooring_Nashville_09_Sept_01_2026.JPG";
 import hardwoodStairs from "@/assets/Hardwood_Stair_Treads_Nashville_TN.png";
 import kitchenHardwood from "@/assets/kitchen-hardwood-flooring-nashville-tn.jpg";
 import lvpNashville from "@/assets/LVP-flooring-nashville-tn.jpg";
@@ -41,6 +50,15 @@ const galleryImages = [
   { src: hardwoodFranklin, alt: "Hardwood Flooring Franklin", category: "Hardwood Flooring" },
   { src: kitchenHardwood, alt: "Hardwood Kitchen Floor", category: "Hardwood Flooring" },
   { src: hardwoodInstallation, alt: "Hardwood Installation Process", category: "Hardwood Flooring" },
+  { src: hardwoodBedroomHendersonville, alt: "Bedroom hardwood installation Hendersonville", category: "Hardwood Flooring" },
+  { src: hardwoodBedroomMtJuliet, alt: "Bedroom hardwood installation Mt. Juliet", category: "Hardwood Flooring" },
+  { src: hardwoodBedroomSpringfield, alt: "Bedroom hardwood installation Springfield", category: "Hardwood Flooring" },
+  { src: hardwoodKitchenBrentwood, alt: "Kitchen hardwood installation Brentwood", category: "Hardwood Flooring" },
+  { src: hardwoodLivingRoomBrentwood, alt: "Living room hardwood installation Brentwood", category: "Hardwood Flooring" },
+  { src: hardwoodLivingRoomMtJuliet, alt: "Living room hardwood installation Mt. Juliet", category: "Hardwood Flooring" },
+  { src: hardwoodNashvilleRecent1, alt: "Recent hardwood flooring Nashville project", category: "Hardwood Flooring" },
+  { src: hardwoodNashvilleRecent2, alt: "Modern hardwood Nashville flooring project", category: "Hardwood Flooring" },
+  { src: hardwoodNashvilleRecent3, alt: "Premium hardwood installation Nashville", category: "Hardwood Flooring" },
   { src: hardwoodNashvilleHero, alt: "Premium Hardwood Nashville", category: "Hardwood Flooring" },
   
   // Herringbone (Under Hardwood)
