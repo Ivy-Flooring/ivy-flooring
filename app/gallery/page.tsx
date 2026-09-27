@@ -12,12 +12,12 @@ import hardwoodInstallation from "@/assets/Hardwood_Flooring_Installation_Nashvi
 import hardwoodBedroomHendersonville from "@/assets/Hardwood_Flooring_Bedroom_Hendersonville.jpg";
 import hardwoodBedroomMtJuliet from "@/assets/Hardwood_Flooring_Bedroom_Mt_Juliet.jpg";
 import hardwoodBedroomSpringfield from "@/assets/Hardwood_Flooring_Bedroom_Springfield.jpg";
-import hardwoodKitchenBrentwood from "@/assets/Hardwood_Flooring_Kitchen_Installation_Brentwood.JPG";
-import hardwoodLivingRoomBrentwood from "@/assets/Hardwood_Flooring_Living_Room_Installation_Brentwood.JPG";
+import hardwoodKitchenBrentwood from "@/assets/Hardwood_Flooring_Kitchen_Installation_Brentwood.jpg";
+import hardwoodLivingRoomBrentwood from "@/assets/Hardwood_Flooring_Living_Room_Installation_Brentwood.jpg";
 import hardwoodLivingRoomMtJuliet from "@/assets/Hardwood_Flooring_Living_Room_Mt_Juliet.jpg";
-import hardwoodNashvilleRecent1 from "@/assets/Hardwood_Flooring_Nashville_01_Sept_01_2026.JPG";
-import hardwoodNashvilleRecent2 from "@/assets/Hardwood_Flooring_Nashville_07_Sept_01_2026.JPG";
-import hardwoodNashvilleRecent3 from "@/assets/Hardwood_Flooring_Nashville_09_Sept_01_2026.JPG";
+import hardwoodNashvilleRecent1 from "@/assets/Hardwood_Flooring_Nashville_01_Sept_01_2026.jpg";
+import hardwoodNashvilleRecent2 from "@/assets/Hardwood_Flooring_Nashville_07_Sept_01_2026.jpg";
+import hardwoodNashvilleRecent3 from "@/assets/Hardwood_Flooring_Nashville_09_Sept_01_2026.jpg";
 import hardwoodStairs from "@/assets/Hardwood_Stair_Treads_Nashville_TN.png";
 import kitchenHardwood from "@/assets/kitchen-hardwood-flooring-nashville-tn.jpg";
 import lvpNashville from "@/assets/LVP-flooring-nashville-tn.jpg";
